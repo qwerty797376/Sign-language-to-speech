@@ -1,0 +1,22 @@
+# ════════════════════════════════════════════════════════════════
+# SIGN LANGUAGE TO VOICE — Requirements
+# Install with: pip install -r requirements.txt
+# ════════════════════════════════════════════════════════════════
+
+# ── Core ────────────────────────────────────────────────────────
+opencv-python>=4.8.0          # webcam + drawing
+mediapipe>=0.10.0             # hand landmark detection (Google)
+numpy>=1.24.0
+
+# ── ML / Model ──────────────────────────────────────────────────
+tensorflow>=2.13.0            # training + TFLite inference
+scikit-learn>=1.3.0           # LabelEncoder, train/test split, metrics
+matplotlib>=3.7.0             # training plots
+seaborn>=0.12.0               # confusion matrix
+
+# ── Text-to-Speech ──────────────────────────────────────────────
+pyttsx3>=2.90                 # offline TTS (preferred — low latency)
+gTTS>=2.3.0                   # online TTS fallback (better quality)
+
+# ── Optional: GUI dashboard ──────────────────────────────────────
+# flask>=3.0.0                # web dashboard (uncomment if needed)
